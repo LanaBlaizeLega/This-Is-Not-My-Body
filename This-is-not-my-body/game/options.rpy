@@ -5,7 +5,8 @@
 ## may want to uncomment them when appropriate.
 
 ## Mouse Pointer #########
-define config.mouse = {'default': [ ('gui/hand.png', 200, 0) ]}
+define config.mouse = {'default': [ ('gui/hand.png', 1200, 800) ]}
+
 
 
 ## Basics ######################################################################
