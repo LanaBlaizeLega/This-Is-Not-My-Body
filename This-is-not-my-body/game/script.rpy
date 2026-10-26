@@ -6,6 +6,7 @@
 
 define g = Character("Gnina")
 define n = ("  ")
+define m = ("mom")
 
 image hand = "hand.png"
 
@@ -17,7 +18,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene background
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -31,18 +32,36 @@ label start:
     ##la main ne s'affiche pas et la transition n'apparaît pas
     ##il faut que je la répare plus tard
 
-    show hand 
-    show hand with moveintop
-    show hand with moveinbottom
-
+ 
 label plush_click:
 
     scene bg room plush
 
-    g "Mes yeux commencent à se remplir de larmes; mes amis ne sont pas venus.
-"
+    g "Lorem ipsum dolor sit amet consectetur adipiscing elit."
 
-    g "Et maintenant mes mains tremble car maman me lance des regards noir."
+    g "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+
+    scene bg bday
+
+    show gnina_afraid_night
+
+    m "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+
+    show mom_night
+
+    m "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+
+    hide mom_night
+
+    m "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+
+    g "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+
+    g "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas."
+
+    m "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+
+    scene bg room plush
 
     call screen cigarette
 
@@ -50,14 +69,17 @@ label cigarette_click:
 
     scene bg room cigarette
 
-    g "Mes yeux commencent à se remplir de larmes; mes amis ne sont pas venus."
+    g "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+
+    scene bg kitchen
+
     call screen mirror
 
 label mirror_click:
 
     scene bg room mirror
 
-    g "Mes yeux commencent à se remplir de larmes; mes amis ne sont pas venus."
+    g "Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas."
 
     # These display lines of dialogue.
 
